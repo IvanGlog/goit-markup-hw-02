@@ -12,7 +12,7 @@
 /* Body */
 
 body {
-    font-family: 'Roboto', 'Open Sans', 'Helvetica',  sans-serif; 
+    font-family: 'Roboto', sans-serif; 
     color: var(--main-black);
     background-color: #FFFFFF;
     
@@ -80,6 +80,10 @@ body {
 .address-info:hover, .address-info:focus {
     color: var(--main-blue);
 }
+/* Активна кнопка поточної вкладки (пріорітетність за рахунок тегу, що розміщений нижче в потоці!)*/
+.active {
+    color: var(--main-blue); 
+}
 
 /* Solutions */ 
 
@@ -98,6 +102,7 @@ body {
 }
 
 .modal-button {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -124,7 +129,7 @@ body {
 
 .advantage-descr {
     font-size: 14px;
-    line-height: 2;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-gray)
 
@@ -152,7 +157,6 @@ body {
 }
 
 .member-position {
-    font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
@@ -169,8 +173,7 @@ body {
     color: var(--main-white);
 }
 
-.footer-address-data {
-    font-style: normal;   
+.footer-address-data {  
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -178,11 +181,14 @@ body {
 }
 
 .footer-address-info {
-    font-style: normal; 
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+address {
+    font-style: normal;
 }
 
 .footer-address-info:hover, .footer-address-info:focus {
@@ -223,7 +229,6 @@ body {
 }
 
 .client-type {
-    font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--main-gray);
